@@ -11,6 +11,9 @@ export default Ember.Component.extend({
       if (confirm('Delete this post')) {
         this.sendAction('destroyPost', post);
       }
-    }
+    },
+    upVote(post) {
+      this.sendAction('upVote', post);
+    },
   }
 });

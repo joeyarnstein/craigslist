@@ -12,6 +12,7 @@ export default Ember.Component.extend({
         title: this.get('title') ? this.get('title'): "",
         image: this.get('image') ? this.get('image'): "",
         content: this.get('content') ? this.get('content'): "",
+        votes: 0,
       };
       this.set('addPost', false);
       this.sendAction('save2', params);
