@@ -1,0 +1,7 @@
+
+{{#if userTrue}}
+  <h3>Click the button to sumbit a question</h3>
+  {{new-post save2="save3"}}
+{{else}}
+  <button {{action 'showSubmitButton'}}>Are you a user of this site?</button>
+{{/if}}

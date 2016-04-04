@@ -9,7 +9,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    save3(params) {
+    save5(params) {
       var newPost = this.store.createRecord('post', params);
       newPost.save();
       this.transitionTo('index');
@@ -18,6 +18,6 @@ export default Ember.Route.extend({
       var newComment = this.store.createRecord('comment', params);
       newComment.save();
       this.transitionTo('index');
-    }
+    },
   }
 });
